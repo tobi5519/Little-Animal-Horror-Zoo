@@ -1,1 +1,2 @@
-# Little-Animal-Horror-Zoo
+# Little Animal Horror Zoo
+/ by P, T 'n' M!
