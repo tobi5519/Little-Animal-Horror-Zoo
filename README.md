@@ -1,2 +1,5 @@
 # Little Animal Horror Zoo
-/ by P, T 'n' M!
+
+**Our git repo for _animal fighting!_**
+
+*By MTP, MPT, PTM, PMT, TPM and TMP*
