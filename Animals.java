@@ -19,26 +19,28 @@ public class Animals {
         this.x = newX;
         this.y = newY;
     }
-    public String getLocation(){
-        String newX = "";
-        String newY = ""; 
-        if (x < 10){
-            newX = String.format("0%d", x);
+    public int getLocation(String z){
+        // String newX = "";
+        // String newY = ""; 
+        // if (x < 10){
+        //     newX = String.format("0%d", x);
+        // } else {
+        //     newX = "" + x;
+        // }
+        // if (y < 10){
+        //     newY = String.format("0%d", y);
+        // } else {
+        //     newY = "" + y;
+        // }
+
+        // return "" + newX + ", " + newY;
+
+        if (z.equals("x")){
+            return x;
         } else {
-            newX = "" + x;
-        }
-        if (y < 10){
-            newY = String.format("0%d", y);
-        } else {
-            newY = "" + y;
+            return y;
         }
 
-        return "" + newX + ", " + newY;
 
     }
-
-    public void printLocation(){
-        System.out.println("I am location " + x + " " + y);
-    }
-
 }
