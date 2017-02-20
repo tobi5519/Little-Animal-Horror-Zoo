@@ -9,17 +9,17 @@ public class Animals {
         return rand.nextInt(1) + 1;
     }
 
-    public void move(){
+    public int move(int newX, int newY){
     // Randomize increments of x or y value
-    Random rand = new Random();
-    this.x = this.x + rand.nextInt(1) + 1;
-    this.y = this.y + rand.nextInt(1) + 1;
+    this.x += newX;
+    this.y += newY;
+
     }
-    public void setLocation(){
+    public void setLocation(int newX, int newY){
     // Randomize x & y values between 1 og 10
-    Random rand = new Random();
-    this.x = rand.nextInt(10) + 1;
-    this.y = rand.nextInt(10) + 1;
+    // Random rand = new Random();
+    this.x = newX;
+    this.y = newY;
     }
     public String getLocation(){
         String newX = "";
