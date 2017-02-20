@@ -16,6 +16,7 @@ public class Board {
     // The animals move on the board (10x10)
     snake.move();
     rabbit.move();
-
+    System.out.println("Snake is at " + snake.getLocation());
+    System.out.println("Rabbit is at " + rabbit.getLocation());
      }
 }
