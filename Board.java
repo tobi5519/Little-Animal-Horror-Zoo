@@ -19,5 +19,7 @@ public class Board {
     rabbit.move(0,1);
     System.out.println("Snake is at " + snake.getLocation());
     System.out.println("Rabbit is at " + rabbit.getLocation());
+
+    
      }
 }
