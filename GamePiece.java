@@ -11,10 +11,16 @@ public class GamePiece {
         return rand.nextInt(i) + 1;
     }
     // Change value of x or y for either animal
-    public void move(int newX, int newY){
-        this.x += newX;
-        this.y += newY;
+    public int move(){
+        if(rand.nextInt(2)=1){
+            this.x += getRandom(1);
+        }else{
+
+            this.y += getRandom(1);
+        }
     }
+    //set up the board limits
+    
     // Set the starting location of either animal
     public void setLocation(int newX, int newY){
         this.x = newX;
