@@ -2,7 +2,7 @@ public class Board {
     public static void main(String[] args){
     
     // We make the animals
-    GamePiece snake = new GamePiece();
+    GamePiece snake123 = new GamePiece();
     GamePiece rabbit = new GamePiece();
     
     // We place the animals in a 10x10
