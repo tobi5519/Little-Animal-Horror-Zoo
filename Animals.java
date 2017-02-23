@@ -1,3 +1,4 @@
+import java.util.Random;
 public class Animals {
     private  String name;
     private int x = 0;
