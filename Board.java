@@ -11,24 +11,31 @@ public class Board {
     rabbit.setLocation();
     snake.setLocation();
 
-    // Let the game begin! :P
-    boolean gameOver = false;
-    while (!gameOver){
-        gp.fight();
-
-        if (gp.fight() = true){
+    // // Let the game begin! :P
+    int turns =0;
+    int num = 0;
+    while (true){
+        snake.move();
+        rabbit.move();
+        turns++;
+        if (snake.getLocation("x") == rabbit.getLocation("x") &&
+            snake.getLocation("y") == rabbit.getLocation("y") ){
+            System.out.println("Game over!");
             break;
         }
-    }
-
-
-    // snake.move(0,1);
-    // rabbit.move(0,-2);
-    // dialog(snake, rabbit);
-    // rabbit.move(0,-1);
+        // num++;
     
+        // System.out.println("Snake is at:  " + snake.getLocation("x") + ", " + snake.getLocation("y"));
+        // System.out.println("Rabbit is at: " + rabbit.getLocation("x") + ", " + rabbit.getLocation("y"));
 
-    System.out.println(snake.getLocation("x") + ", " + snake.getLocation("y"));
-    System.out.println(rabbit.getLocation("x") + ", " + rabbit.getLocation("y"));
+        // if (num > 10){
+        //     System.out.println("Now we are done!");
+        //     break;
+        // } else {
+        //     System.out.println("Not done yet");
+        // }
+    }
+    System.out.println("The game took " + turns + " turns");
+
     }
 }

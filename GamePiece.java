@@ -14,14 +14,36 @@ public class GamePiece {
     public void printRandom(){
         System.out.println(getRandom(10));
     }
-    // // Change value of x or y for either animal
-    // public int move(){
-    //     if(getRandom(2)=1){
-    //         this.x += 1;
-    //     } else {
-    //         this.y += 1;
-    //     }
-    // }
+    // Change value of x or y for either animal
+    public void move(){
+        if(getRandom(2) == 1){  // if X
+            if(this.x == 10){   // if 10
+                this.x--;
+            } else if (this.x == 1) {
+                this.x++;
+            } else {
+                if (getRandom(2) == 1){
+                    this.x++;
+                } else {
+                    this.x--;
+                }
+            }
+                            
+        } else {                // When y
+            if(this.y == 10){   // if 10
+                this.y--;
+            } else if (this.y == 1) {
+                this.y++;
+            } else {
+                if (getRandom(2) == 1){
+                    this.y++;
+                } else {
+                    this.y--;
+                }
+            }
+        }
+    }
+
     // Set the starting location of either animal
     public void setLocation(){
         this.x = getRandom(10);
@@ -45,14 +67,5 @@ public class GamePiece {
         } else{
             System.out.println("Yo, where you at?");
         }
-    }
-    // Prints game over and returns a value to end game
-    public boolean fight(GamePiece snake, GamePiece rabbit){
-        if (snake.getLocation("x") == rabbit.getLocation("x") &&
-            snake.getLocation("y") == rabbit.getLocation("y") ){
-            System.out.println("Game over!");
-            return true;
-        }
-        return false;
     }
 }
