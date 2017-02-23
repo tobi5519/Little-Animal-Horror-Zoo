@@ -18,6 +18,7 @@ public class Board {
         snake.move();
         rabbit.move();
         turns++;
+        // If on the same coordinate, fight! and declare a victor!
         if (snake.getLocation("x") == rabbit.getLocation("x") &&
             snake.getLocation("y") == rabbit.getLocation("y") ){
                 if(gp.getRandom(2) == 1){  // if X
