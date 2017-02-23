@@ -19,6 +19,16 @@ public class Board {
         snake.move();
         rabbit.move();
         turns++;
+        // // If snake and rabbit are adjecent, print a relevant dialog!
+        // if (snake.getLocation("x") == rabbit.getLocation("x") -1 ||
+        //     snake.getLocation("x") == rabbit.getLocation("x") +1 ||
+        //     snake.getLocation("y") == rabbit.getLocation("y") -1 ||
+        //     snake.getLocation("y") == rabbit.getLocation("y") +1 ){
+        //     System.out.println("Wha' you frontin'?!");
+        // } else{
+        //     System.out.println("Yo, where you at?");
+        // }
+
         // // If on the same coordinate, fight! and declare a victor!
         if (snake.getLocation("x") == rabbit.getLocation("x") &&
             snake.getLocation("y") == rabbit.getLocation("y") ){
