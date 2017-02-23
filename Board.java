@@ -12,28 +12,28 @@ public class Board {
     snake.setLocation();
 
     // // Let the game begin! :P
-    int turns =0;
-    int num = 0;
+    String victor = "";
+    int turns = 0;
     while (true){
         snake.move();
         rabbit.move();
         turns++;
         if (snake.getLocation("x") == rabbit.getLocation("x") &&
             snake.getLocation("y") == rabbit.getLocation("y") ){
+                if(gp.getRandom(2) == 1){  // if X
+                    victor = "rabbit";
+                } else {
+                    victor = "snake";
+                }
             System.out.println("Game over!");
+            System.out.println("The " + victor + " won!");
             break;
         }
-        // num++;
-    
-        // System.out.println("Snake is at:  " + snake.getLocation("x") + ", " + snake.getLocation("y"));
-        // System.out.println("Rabbit is at: " + rabbit.getLocation("x") + ", " + rabbit.getLocation("y"));
-
-        // if (num > 10){
-        //     System.out.println("Now we are done!");
-        //     break;
-        // } else {
-        //     System.out.println("Not done yet");
-        // }
+        // Stops the game if it has been over a 1000 turns
+        if (turns >= 1000){
+            System.out.println("The game is a tie");
+            break;
+        }
     }
     System.out.println("The game took " + turns + " turns");
 
