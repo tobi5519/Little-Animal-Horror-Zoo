@@ -4,6 +4,7 @@ public class Board {
     // We make the animals
     GamePiece snake = new GamePiece();
     GamePiece rabbit = new GamePiece();
+    
     // Making a generelt instance
     GamePiece gp = new GamePiece();
     
@@ -18,7 +19,7 @@ public class Board {
         snake.move();
         rabbit.move();
         turns++;
-        // If on the same coordinate, fight! and declare a victor!
+        // // If on the same coordinate, fight! and declare a victor!
         if (snake.getLocation("x") == rabbit.getLocation("x") &&
             snake.getLocation("y") == rabbit.getLocation("y") ){
                 if(gp.getRandom(2) == 1){  // if X
@@ -37,6 +38,5 @@ public class Board {
         }
     }
     System.out.println("The game took " + turns + " turns");
-
     }
 }

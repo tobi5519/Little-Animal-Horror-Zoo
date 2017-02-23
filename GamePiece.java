@@ -1,8 +1,8 @@
 import java.util.Random;
 public class GamePiece {
+    
     // Attributes
-    // Overvej at lave en constructor til dette!
-    private  String name; // hvad bruger vi name til?
+    private  String name; // Bliver ikke brugt?
     private int x = 0;
     private int y = 0;
 
@@ -11,10 +11,8 @@ public class GamePiece {
         Random rand = new Random();
         return rand.nextInt(i) + 1;
     }
-    public void printRandom(){
-        System.out.println(getRandom(10));
-    }
-    // Change value of x or y for either animal
+
+    // Change value of x or y
     public void move(){
         if(getRandom(2) == 1){  // if X
             if(this.x == 10){   // if 10
@@ -27,8 +25,7 @@ public class GamePiece {
                 } else {
                     this.x--;
                 }
-            }
-                            
+            }                 
         } else {                // When y
             if(this.y == 10){   // if 10
                 this.y--;
@@ -58,6 +55,7 @@ public class GamePiece {
             return y;
         }
     }
+
     // Prints a dialog if the animals location is adjecent
      public void dialog(GamePiece snake, GamePiece rabbit){
         if (snake.getLocation("x") == rabbit.getLocation("x") -1 ||
