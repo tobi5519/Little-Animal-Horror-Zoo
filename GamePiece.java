@@ -1,7 +1,8 @@
 import java.util.Random;
 public class GamePiece {
     // Attributes
-    private  String name;
+    // Overvej at lave en constructor til dette!
+    private  String name; // hvad bruger vi name til?
     private int x = 0;
     private int y = 0;
 
@@ -10,22 +11,23 @@ public class GamePiece {
         Random rand = new Random();
         return rand.nextInt(i) + 1;
     }
-    // Change value of x or y for either animal
-    public int move(){
-        if(rand.nextInt(2)=1){
-            this.x += getRandom(1);
-        }else{
-
-            this.y += getRandom(1);
-        }
+    public void printRandom(){
+        System.out.println(getRandom(10));
     }
-    //set up the board limits
-    
+    // // Change value of x or y for either animal
+    // public int move(){
+    //     if(getRandom(2)=1){
+    //         this.x += 1;
+    //     } else {
+    //         this.y += 1;
+    //     }
+    // }
     // Set the starting location of either animal
-    public void setLocation(int newX, int newY){
-        this.x = newX;
-        this.y = newY;
+    public void setLocation(){
+        this.x = getRandom(10);
+        this.y = getRandom(10);
     }
+    
     // Return the current location of either animal
     public int getLocation(String z){
         if (z.equals("x")){
