@@ -32,7 +32,7 @@ public class Board {
         // // If on the same coordinate, fight! and declare a victor!
         if (snake.getLocation("x") == rabbit.getLocation("x") &&
             snake.getLocation("y") == rabbit.getLocation("y") ){
-                if(gp.getRandom(2) == 1){  // if X
+                if(gp.getPRNG(2) == 1){  // if X
                     victor = "rabbit";
                 } else {
                     victor = "snake";
