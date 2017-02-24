@@ -62,16 +62,4 @@ public class GamePiece {
             return y;
         }
     }
-
-    // Prints a dialog if the animals location is adjecent
-    //  public void dialog(GamePiece snake, GamePiece rabbit){
-    //     if (snake.getLocation("x") == rabbit.getLocation("x") -1 ||
-    //         snake.getLocation("x") == rabbit.getLocation("x") +1 ||
-    //         snake.getLocation("y") == rabbit.getLocation("y") -1 ||
-    //         snake.getLocation("y") == rabbit.getLocation("y") +1 ){
-    //         System.out.println("Wha' you frontin'?!");
-    //     } else{
-    //         System.out.println("Yo, where you at?");
-    //     }
-    // }
 }
