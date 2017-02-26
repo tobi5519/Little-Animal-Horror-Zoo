@@ -54,7 +54,7 @@ public class GamePiece {
         this.y = getPRNG(10);
     }
     
-    // Return the current location of either animal
+    // Return the current location of either animal, but does it? I don't see the return ?'
     public int getLocation(String z){
         if (z.equals("x")){
             return x;
@@ -63,3 +63,4 @@ public class GamePiece {
         }
     }
 }
+//does this work? lets just delete or mark out?
