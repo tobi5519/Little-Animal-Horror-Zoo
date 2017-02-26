@@ -12,7 +12,7 @@ public class GamePiece {
         Random rand = new Random();
         return rand.nextInt(i) + 1;
     }
-    // // TRNG
+    // // TRNG                                            
     // public int getTRNG(int i){
     //   SecureRandom rand = new SecureRandom();
     //   byte bytes[] = new byte[i];
@@ -24,7 +24,7 @@ public class GamePiece {
         if(getPRNG(2) == 1){            // if X
             if(this.x == 10){           // if 10
                 this.x--;
-            } else if (this.x == 1) {
+            } else if (this.x == 1) {   // if 1
                 this.x++;
             } else {
                 if (getPRNG(2) == 1){
@@ -36,7 +36,7 @@ public class GamePiece {
         } else {                        // When y
             if(this.y == 10){           // if 10
                 this.y--;
-            } else if (this.y == 1) {
+            } else if (this.y == 1) {   // If 1
                 this.y++;
             } else {
                 if (getPRNG(2) == 1){
@@ -48,13 +48,13 @@ public class GamePiece {
         }
     }
 
-    // Set the starting location of either animal
+    // Set the starting location of a GamePiece instance
     public void setLocation(){
         this.x = getPRNG(10);
         this.y = getPRNG(10);
     }
     
-    // Return the current location of either animal
+    // Return the current location of a GamePiece instance
     public int getLocation(String z){
         if (z.equals("x")){
             return x;
