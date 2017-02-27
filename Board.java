@@ -5,7 +5,7 @@ public class Board {
     GamePiece snake = new GamePiece();
     GamePiece rabbit = new GamePiece();
     
-    // Making a generelt instance
+    // Making a general instance
     GamePiece gp = new GamePiece();
     
     // We place the animals in a 10x10
