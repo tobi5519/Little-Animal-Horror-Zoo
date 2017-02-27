@@ -54,7 +54,11 @@ public class GamePiece {
         this.y = getPRNG(10);
     }
     
+<<<<<<< HEAD
     // Return the current location of a GamePiece instance
+=======
+    // Return the current location of either animal, but does it? I don't see the return ?'
+>>>>>>> 8150728ec80f71719e09382701acd4d356e1713d
     public int getLocation(String z){
         if (z.equals("x")){
             return x;
