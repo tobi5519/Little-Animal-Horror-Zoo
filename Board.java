@@ -19,7 +19,7 @@ public class Board {
         snake.move();
         rabbit.move();
         turns++;
-        // // If snake and rabbit are adjecent, print a relevant dialog!
+        // // If snake and rabbit are adjacent, print a relevant dialog!
         // if (snake.getLocation("x") == rabbit.getLocation("x") -1 ||
         //     snake.getLocation("x") == rabbit.getLocation("x") +1 ||
         //     snake.getLocation("y") == rabbit.getLocation("y") -1 ||
